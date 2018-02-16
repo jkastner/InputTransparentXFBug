@@ -1,0 +1,23 @@
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:InputTransparentBug"
+             x:Name="TheMainPage" 
+             x:Class="InputTransparentBug.MainPage">
+  <ContentPage.Content>
+    <StackLayout>
+      <Entry
+        Margin="5,50,5,5"
+        Text="1. Click here"></Entry>
+      <Label
+        Text="2. Press 'tab' to put the focus on the button."
+        ></Label>
+      <Button 
+        Margin="5" 
+        InputTransparent="True"
+        Text="3. Press Enter" 
+        Command="{Binding TheCommand}"></Button>
+      <Label Text="4. Try to click the button"></Label>
+      </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
